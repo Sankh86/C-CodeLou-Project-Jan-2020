@@ -6,45 +6,49 @@ namespace DCheatham.CodeLou.ExerciseProject
     {
         static void Main(string[] args)
         {
+            MainMenu();
+        }
 
+        static void MainMenu()
+        {
+            var studentList = new Student();
             while (true)
             {
-                Console.WriteLine("Enter Student Id");
-                var studentId = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter First Name");
-                var studentFirstName = Console.ReadLine();
-                Console.WriteLine("Enter Last Name");
-                var studentLastName = Console.ReadLine();
-                Console.WriteLine("Enter Class Name");
-                var className = Console.ReadLine();
-                Console.WriteLine("Enter Last Class Completed");
-                var lastClass = Console.ReadLine();
-                Console.WriteLine("Enter Last Class Completed Date in format MM/dd/YYYY");
-                var lastCompletedOn = DateTimeOffset.Parse(Console.ReadLine());
-                Console.WriteLine("Enter Start Date in format MM/dd/YYYY");
-                var startDate = DateTimeOffset.Parse(Console.ReadLine());
+                Console.Clear();
+                Console.WriteLine("Menu");
+                Console.WriteLine("1. New Student");
+                Console.WriteLine("2. List Students");
+                Console.WriteLine("3. Find Student By Name");
+                Console.WriteLine("4. Find Student By Course");
+                Console.WriteLine("5. Exit");
+                string input = Console.ReadLine();
 
-                var studentRecord = new Student();
-                studentRecord.StudentId = studentId;
-                studentRecord.FirstName = studentFirstName;
-                studentRecord.LastName = studentLastName;
-                studentRecord.ClassName = className;
-                studentRecord.StartDate = startDate;
-                studentRecord.LastClassCompleted = lastClass;
-                studentRecord.LastClassCompletedOn = lastCompletedOn;
-                Console.WriteLine($"Student Id | Name |  Class "); ;
-                Console.WriteLine($"{studentRecord.StudentId} | {studentRecord.FirstName} {studentRecord.LastName} | {studentRecord.ClassName} "); ;
-                Console.ReadKey();
-
-                Console.Write("Enter new record? (y/n) ");
-                var continueLoop = Console.ReadLine();
-
-                if (continueLoop.ToLower() == "n" || continueLoop.ToLower() == "no")
+                if (input == "1" || input == "1." || input.ToLower() == "new student")
                 {
-                    break;
+                    studentList.AddStudent();
                 }
 
+                if(input == "2" || input == "2." || input.ToLower() == "list students")
+                {
+                    studentList.ViewRecords();
+                }
 
+                if(input == "3" || input == "3." || input.ToLower() == "find student by name")
+                {
+                    studentList.FindByName();
+                }
+
+                if(input == "4" || input == "4." || input.ToLower() == "find student by course")
+                {
+                    studentList.FindByCourse();
+                }
+
+                if (input == "5" || input == "5." || input.ToLower() == "exit" || input.ToLower() == "q" || input.ToLower() == "quit")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Program End");
+                    break;
+                }
             }
         }
     }

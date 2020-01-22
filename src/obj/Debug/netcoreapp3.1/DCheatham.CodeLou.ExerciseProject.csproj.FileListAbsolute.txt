@@ -9,3 +9,5 @@ C:\CodeLou\C#\Class Project\src\obj\Debug\netcoreapp3.1\DCheatham.CodeLou.Exerci
 C:\CodeLou\C#\Class Project\src\obj\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.AssemblyInfo.cs
 C:\CodeLou\C#\Class Project\src\obj\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.dll
 C:\CodeLou\C#\Class Project\src\obj\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.pdb
+C:\CodeLou\C#\Class Project\src\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\CodeLou\C#\Class Project\src\obj\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.csproj.CopyComplete
