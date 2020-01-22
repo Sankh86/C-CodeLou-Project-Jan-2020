@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using Newtonsoft.Json;
+
 namespace DCheatham.CodeLou.ExerciseProject
 {
     public class Student
@@ -28,8 +30,15 @@ namespace DCheatham.CodeLou.ExerciseProject
                 var input = Console.ReadLine();
                 if (Int32.TryParse(input, out var val))
                 {
-                    checkStudentId = false;
-                    studentRecord.StudentId = val;
+                    if (UniqueId(val))
+                    {
+                        checkStudentId = false;
+                        studentRecord.StudentId = val;
+                    }
+                    else
+                    {
+                        Console.WriteLine("   ID Exists! please enter new number.");
+                    }
                 }
                 else{
                     Console.WriteLine("   Invalid Input! please enter a number.");
@@ -77,15 +86,23 @@ namespace DCheatham.CodeLou.ExerciseProject
             }
 
             _studentList.Add(studentRecord);
+            string json = JsonConvert.SerializeObject(_studentList.ToArray(), Formatting.Indented);
+            System.IO.File.WriteAllText(@"..\src\StudentRecords.json", json);
         }
 
         public void ViewRecords()
         {
             Console.Clear();
-            Console.WriteLine("Student ID | Name | Class");
+            Console.WriteLine("    Student ID | Name | Class");
+            Console.WriteLine("+-------------------------------+");
             foreach (Student student in _studentList)
             {
                 Console.WriteLine($"{student.StudentId} | {student.FirstName} {student.LastName} | {student.ClassName}");
+            }
+            if (_studentList.Count == 0)
+            {
+                Console.WriteLine();
+                Console.WriteLine("       < No records found >");
             }
             Console.ReadLine();
         }
@@ -105,7 +122,8 @@ namespace DCheatham.CodeLou.ExerciseProject
                 {
                     if (numRecord == 0)
                     {
-                        Console.WriteLine($"Student ID | Name |  Class ");
+                        Console.WriteLine("    Student ID | Name | Class");
+                        Console.WriteLine("+-------------------------------+");
                     }
                     Console.WriteLine($"{student.StudentId} | {student.FirstName} {student.LastName} | {student.ClassName}");
                     numRecord += 1;
@@ -114,7 +132,8 @@ namespace DCheatham.CodeLou.ExerciseProject
 
             if (numRecord == 0)
             {
-                Console.WriteLine("Could not find student with that name.");
+                Console.WriteLine();
+                Console.WriteLine("  < Could not find student with that name >");
             }
             Console.ReadLine();
         }
@@ -143,12 +162,27 @@ namespace DCheatham.CodeLou.ExerciseProject
 
             if (numRecord == 0)
             {
-                Console.WriteLine("Could not find students elisted in that class.");
+                Console.WriteLine();
+                Console.WriteLine("  < Could not find students elisted in that class >");
             }
             Console.ReadLine();
         }
 
-        // Console.WriteLine($"Student Id | Name |  Class ");
-        // Console.WriteLine($"{studentRecord.StudentId} | {studentRecord.FirstName} {studentRecord.LastName} | {studentRecord.ClassName} ");
+        private bool UniqueId(int testId)
+        {
+            int numRecord = 0;
+            foreach (Student student in _studentList)
+            {
+                int studentId = student.StudentId;
+
+                if (studentId == testId)
+                {
+                    numRecord += 1;
+                }
+            }
+            return numRecord == 0;
+        }
+
+        //var json = JsonConvert.DeserializeObject(System.IO.File.ReadAllText(@"..\src\StudentRecords.json"));
     }
 }
