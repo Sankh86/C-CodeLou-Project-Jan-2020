@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CodeLou\\C#\\Class Project\\src\\[YourName].CodeLou.ExerciseProject.csproj": {}
+    "C:\\CodeLou\\C#\\Class Project\\src\\DCheatham.CodeLou.ExerciseProject.csproj": {}
   },
   "projects": {
-    "C:\\CodeLou\\C#\\Class Project\\src\\[YourName].CodeLou.ExerciseProject.csproj": {
+    "C:\\CodeLou\\C#\\Class Project\\src\\DCheatham.CodeLou.ExerciseProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CodeLou\\C#\\Class Project\\src\\[YourName].CodeLou.ExerciseProject.csproj",
-        "projectName": "[YourName].CodeLou.ExerciseProject",
-        "projectPath": "C:\\CodeLou\\C#\\Class Project\\src\\[YourName].CodeLou.ExerciseProject.csproj",
+        "projectUniqueName": "C:\\CodeLou\\C#\\Class Project\\src\\DCheatham.CodeLou.ExerciseProject.csproj",
+        "projectName": "DCheatham.CodeLou.ExerciseProject",
+        "projectPath": "C:\\CodeLou\\C#\\Class Project\\src\\DCheatham.CodeLou.ExerciseProject.csproj",
         "packagesPath": "C:\\Users\\David.Cheatham\\.nuget\\packages\\",
         "outputPath": "C:\\CodeLou\\C#\\Class Project\\src\\obj\\",
         "projectStyle": "PackageReference",

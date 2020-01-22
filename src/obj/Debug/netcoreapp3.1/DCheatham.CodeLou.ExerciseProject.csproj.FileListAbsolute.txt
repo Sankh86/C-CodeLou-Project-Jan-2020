@@ -1,0 +1,11 @@
+C:\CodeLou\C#\Class Project\src\bin\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.exe
+C:\CodeLou\C#\Class Project\src\bin\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.deps.json
+C:\CodeLou\C#\Class Project\src\bin\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.runtimeconfig.json
+C:\CodeLou\C#\Class Project\src\bin\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.runtimeconfig.dev.json
+C:\CodeLou\C#\Class Project\src\bin\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.dll
+C:\CodeLou\C#\Class Project\src\bin\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.pdb
+C:\CodeLou\C#\Class Project\src\obj\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.csprojAssemblyReference.cache
+C:\CodeLou\C#\Class Project\src\obj\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.AssemblyInfoInputs.cache
+C:\CodeLou\C#\Class Project\src\obj\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.AssemblyInfo.cs
+C:\CodeLou\C#\Class Project\src\obj\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.dll
+C:\CodeLou\C#\Class Project\src\obj\Debug\netcoreapp3.1\DCheatham.CodeLou.ExerciseProject.pdb
