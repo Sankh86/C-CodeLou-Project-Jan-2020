@@ -1,11 +1,11 @@
 [
   {
     "StudentId": 1,
-    "FirstName": "D",
-    "LastName": "C",
-    "ClassName": "d",
+    "FirstName": "Dave",
+    "LastName": "Cheat",
+    "ClassName": "Js",
     "StartDate": "2003-01-02T00:00:00-05:00",
-    "LastClassCompleted": "s",
+    "LastClassCompleted": "BB",
     "LastClassCompletedOn": "2003-01-02T00:00:00-05:00"
   }
 ]

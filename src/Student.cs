@@ -6,7 +6,7 @@ namespace DCheatham.CodeLou.ExerciseProject
 {
     public class Student
     {
-        //private ArrayList _studentList = JsonConvert.DeserializeObject(System.IO.File.ReadAllText(@"..\src\StudentRecords.json")) as ArrayList;
+        //private ArrayList _studentList = JsonConvert.DeserializeObject<ArrayList>(System.IO.File.ReadAllText(@"..\src\StudentRecords.json"));
         private ArrayList _studentList = new ArrayList();
         public int StudentId { get; set; }
         public string FirstName { get; set; }
