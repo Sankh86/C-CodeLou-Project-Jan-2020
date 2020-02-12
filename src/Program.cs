@@ -12,7 +12,7 @@ namespace DCheatham.CodeLou.ExerciseProject
 
         static void MainMenu()
         {
-            Student studentList = new Student();
+            StudentRepository studentList = new StudentRepository();
 
             while (true)
             {
