@@ -34,5 +34,23 @@
     "StartDate": "2020-01-10T00:00:00-05:00",
     "LastClassCompleted": "Geology",
     "LastClassCompletedOn": "2019-12-15T00:00:00-05:00"
+  },
+  {
+    "StudentId": 5,
+    "FirstName": "Gary",
+    "LastName": "Johnson",
+    "ClassName": "Politics",
+    "StartDate": "2020-01-10T00:00:00-05:00",
+    "LastClassCompleted": "English",
+    "LastClassCompletedOn": "2019-12-15T00:00:00-05:00"
+  },
+  {
+    "StudentId": 6,
+    "FirstName": "James",
+    "LastName": "Tracey",
+    "ClassName": "Gender Studies",
+    "StartDate": "2020-01-10T00:00:00-05:00",
+    "LastClassCompleted": "Cooking",
+    "LastClassCompletedOn": "2019-12-20T00:00:00-05:00"
   }
 ]
